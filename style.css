@@ -1,0 +1,72 @@
+/* resets */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.overflow {
+  overflow: hidden;
+}
+
+
+/* header */
+#header {
+  float: left;
+  width: 100%;
+}
+
+#header h1, #header p {
+  text-align: center;
+}
+
+.clearFloat {
+  overflow: hidden;
+}
+
+
+/* cardTable */
+.square {
+  float: left;
+}
+#cardTable {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 0.2rem;
+}
+
+.card {
+  text-align: center;
+  padding: 0.4rem;
+  background-color: #ddd;
+  position: relative;
+}
+.card:hover {
+  cursor: pointer;
+}
+
+.fliped {
+  background-color: lightsalmon;
+}
+
+.found {
+  background-color: lightgreen;
+}
+
+
+/* instructionsTable */
+#instructionsTable {
+  float: right;
+  text-align: center;
+}
+
+
+/* footer */
+#footer {
+  float: left;
+  width: 100%;
+}
+
+#footer p {
+  text-align: center;
+}
