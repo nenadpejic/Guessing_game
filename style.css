@@ -4,16 +4,27 @@
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 .overflow {
   overflow: hidden;
 }
 
+/* variables */
+:root {
+  --color-main: rgb(31, 255, 180);
+  --color-dark: #777;
+  --color-light: #ddd;
+  --color-white: #fff;
+}
 
 /* header */
 #header {
   float: left;
   width: 100%;
+  background-color: var(--color-dark);
+  color: var(--color-white);
 }
 
 #header h1, #header p {
@@ -24,6 +35,12 @@ body {
   overflow: hidden;
 }
 
+/* main */
+main {
+  float: left;
+  width: 100%;
+  padding: 1rem;
+}
 
 /* cardTable */
 .square {
@@ -65,8 +82,11 @@ body {
 #footer {
   float: left;
   width: 100%;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  text-align: center;
 }
 
-#footer p {
-  text-align: center;
+#jsSuccessPercentage {
+  color: var(--color-main);
 }

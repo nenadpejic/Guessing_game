@@ -1,7 +1,7 @@
 // DOM
 let divCardTable = document.querySelector("#cardTable");
 let tableInstructionsTable = document.querySelector("table");
-let pFooter = document.querySelector("footer").querySelector("p");
+let spanJsSuccessPercentage = document.querySelector("#jsSuccessPercentage");
 
 // Global variables
 let isCardReady = true;
@@ -60,7 +60,7 @@ function getSuccess() {
 // updateSuccessPercentage
 function updateSuccessPercentage() {
   let success = getSuccess();
-  pFooter.textContent = `Success percentage: ${success}%`;
+  spanJsSuccessPercentage.textContent = `${success}%`;
   localStorage.setItem("totalSucces", success);
 }
 
