@@ -72,7 +72,7 @@ function printSuccessPercentage() {
 printSuccessPercentage();
 
 // cardTable functionality
-divCardTable.addEventListener("click", function runGame() {
+divCardTable.addEventListener("click", function runGame(event) {
   let card = event.target;
 
   if (card.className === "card" && isCardReady) {
