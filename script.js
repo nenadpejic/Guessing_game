@@ -46,7 +46,7 @@ function saveRound(result) {
 }
 
 // getSuccess
-function getSuccess() {
+function getSuccessPercentage() {
   let arr = JSON.parse(localStorage.getItem("results"));
   let ctr = 0;
   arr.forEach(elem => {
@@ -57,12 +57,19 @@ function getSuccess() {
   return Math.round((ctr / arr.length) * 100);
 }
 
-// updateSuccessPercentage
-function updateSuccessPercentage() {
-  let success = getSuccess();
-  spanJsSuccessPercentage.textContent = `${success}%`;
-  localStorage.setItem("totalSucces", success);
+// saveSuccessPercentage
+function saveSuccessPercentage() {
+  localStorage.setItem("successPercentage", getSuccessPercentage());
 }
+
+// printSuccessPercentage
+function printSuccessPercentage() {
+  let successPercentage = localStorage.getItem("successPercentage");
+  if (successPercentage) {
+    spanJsSuccessPercentage.textContent = `${successPercentage}%`;
+  }
+}
+printSuccessPercentage();
 
 // cardTable functionality
 divCardTable.addEventListener("click", function runGame() {
@@ -107,7 +114,8 @@ divCardTable.addEventListener("click", function runGame() {
       // Victory
       isCardReady = false;
       saveRound("victory");
-      updateSuccessPercentage();
+      saveSuccessPercentage();
+      printSuccessPercentage();
       setTimeout(() => {
         alert(`Victory! The number was ${rndmNum}`);
         reset();
@@ -118,7 +126,8 @@ divCardTable.addEventListener("click", function runGame() {
       // Defeat
       isCardReady = false;
       saveRound("defeat");
-      updateSuccessPercentage();
+      saveSuccessPercentage();
+      printSuccessPercentage();
       setTimeout(() => {
         alert(`Game over! The number was ${rndmNum}`);
         reset();
