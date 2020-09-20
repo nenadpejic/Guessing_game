@@ -8,6 +8,7 @@ let isCardReady = true;
 let rndmNum = 0;
 let currentNum = 0;
 let numTries = 0;
+let instruction = "none";
 
 // create a random number 1 - 100
 function getRandomNumber() {
@@ -77,7 +78,7 @@ divCardTable.addEventListener("click", function runGame(event) {
 
   if (card.className === "card" && isCardReady) {
     // get currentNum
-    currentNum = Number(card.id);
+    currentNum = Number(card.id.slice(2));
 
     // set card class to fliped or found
     if (currentNum !== rndmNum) {
@@ -98,8 +99,10 @@ divCardTable.addEventListener("click", function runGame(event) {
           td.textContent = numTries;
         } else if (i === 1) {
           if (rndmNum < currentNum) {
+            instruction = "smaller";
             td.textContent = `The number is smaller than ${currentNum}`;
           } else {
+            instruction = "larger";
             td.textContent = `The number is larger than ${currentNum}`;
           }
         } else {
