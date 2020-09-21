@@ -120,7 +120,8 @@ divCardTable.addEventListener("click", function runGame(event) {
       saveSuccessPercentage();
       printSuccessPercentage();
       setTimeout(() => {
-        alert(`Victory! The number was ${rndmNum}`);
+        alert(`Victory! :)
+The number was ${rndmNum}.`);
         reset();
         isCardReady = true;
       }, 100);
@@ -132,7 +133,8 @@ divCardTable.addEventListener("click", function runGame(event) {
       saveSuccessPercentage();
       printSuccessPercentage();
       setTimeout(() => {
-        alert(`Game over! The number was ${rndmNum}`);
+        alert(`Game over! :(
+The number was ${rndmNum}.`);
         reset();
         isCardReady = true;
       }, 100);

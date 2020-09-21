@@ -9,17 +9,17 @@
 </head>
 
 <body>
-  <div class="overflow">
+  <div class="container overflow">
     <header id="header">
-      <h1>Guess the number!</h1>
+      <h1>Guess the number</h1>
       <p>In front of you is a table with 100 cards.<br>
         The goal of the game is to guess the random number within 7 tries.<br>
         Good luck!</p>
     </header>
 
     <main class="overflow">
-      <div class="square">
-        <div id="barrier"></div>
+      <div id="square">
+        <div id="barrier" class="displayNone"></div>
         <div id="cardTable">
           <div class="card" id="c-1">1</div>
           <div class="card" id="c-2">2</div>
@@ -125,7 +125,7 @@
       </div>
 
       <div id="instructionsTable">
-        <input type="button" value="aiHelp">
+        <input type="button" value="aiHelp" id="aiHelp">
         <table>
           <tr>
             <th>Current try</th>
@@ -138,7 +138,7 @@
 
     <footer id="footer">
       <p>Success percentage: <span id="jsSuccessPercentage"></span></p>
-      <p>Game created by Nenad Pejić</p>
+      <p>Created by Nenad Pejić</p>
     </footer>
 
     <script src="./script.js"></script>
