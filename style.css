@@ -75,17 +75,21 @@ header p {
 }
 .card:hover {
   cursor: pointer;
+  background-color: #ebebeb;
+}
+.card:active{
+  background-color: #dcdcdc;
 }
 .fliped {
-  background-color: var(--color-bad);
+  background-color: var(--color-bad) !important;
 }
 .found {
-  background-color: var(--color-good);
+  background-color: var(--color-good) !important;
 }
 
 /* btnAiHelp */
 #aiHelp {
-  background-color: #70da87;
+  background-color: #6bd682;
   color: var(--color-white);
   border: none;
   padding: 0.5rem 2rem;
@@ -97,11 +101,11 @@ header p {
   outline: none;
 }
 #aiHelp:hover {
-  background-color: #8be09d;
+  background-color: #61d37a;
   cursor: pointer;
 }
 #aiHelp:active {
-  background-color: #56d371;
+  background-color: #4fc769;
 }
 
 /* instructionsTable */
