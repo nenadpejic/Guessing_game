@@ -9,137 +9,144 @@
 </head>
 
 <body>
-  <div class="container overflow">
-    <header id="header">
-      <h1>Guess the number</h1>
-      <p>In front of you is a table with 100 cards.<br>
-        The goal of the game is to guess the random number within 7 tries.<br>
-        Good luck!</p>
-    </header>
+  <div class="overflow">
+    <div class="col-d-12">
+      <header class="overflow">
+        <h1>Guess the number</h1>
+        <p>In front of you is a table with 100 cards.<br>
+          The goal of the game is to guess the random number within 7 tries.<br>
+          Good luck!</p>
+      </header>
+    </div>
 
-    <main class="overflow">
-      <div id="square">
-        <div id="barrier" class="displayNone"></div>
-        <div id="cardTable">
-          <div class="card" id="c-1">1</div>
-          <div class="card" id="c-2">2</div>
-          <div class="card" id="c-3">3</div>
-          <div class="card" id="c-4">4</div>
-          <div class="card" id="c-5">5</div>
-          <div class="card" id="c-6">6</div>
-          <div class="card" id="c-7">7</div>
-          <div class="card" id="c-8">8</div>
-          <div class="card" id="c-9">9</div>
-          <div class="card" id="c-10">10</div>
-          <div class="card" id="c-11">11</div>
-          <div class="card" id="c-12">12</div>
-          <div class="card" id="c-13">13</div>
-          <div class="card" id="c-14">14</div>
-          <div class="card" id="c-15">15</div>
-          <div class="card" id="c-16">16</div>
-          <div class="card" id="c-17">17</div>
-          <div class="card" id="c-18">18</div>
-          <div class="card" id="c-19">19</div>
-          <div class="card" id="c-20">20</div>
-          <div class="card" id="c-21">21</div>
-          <div class="card" id="c-22">22</div>
-          <div class="card" id="c-23">23</div>
-          <div class="card" id="c-24">24</div>
-          <div class="card" id="c-25">25</div>
-          <div class="card" id="c-26">26</div>
-          <div class="card" id="c-27">27</div>
-          <div class="card" id="c-28">28</div>
-          <div class="card" id="c-29">29</div>
-          <div class="card" id="c-30">30</div>
-          <div class="card" id="c-31">31</div>
-          <div class="card" id="c-32">32</div>
-          <div class="card" id="c-33">33</div>
-          <div class="card" id="c-34">34</div>
-          <div class="card" id="c-35">35</div>
-          <div class="card" id="c-36">36</div>
-          <div class="card" id="c-37">37</div>
-          <div class="card" id="c-38">38</div>
-          <div class="card" id="c-39">39</div>
-          <div class="card" id="c-40">40</div>
-          <div class="card" id="c-41">41</div>
-          <div class="card" id="c-42">42</div>
-          <div class="card" id="c-43">43</div>
-          <div class="card" id="c-44">44</div>
-          <div class="card" id="c-45">45</div>
-          <div class="card" id="c-46">46</div>
-          <div class="card" id="c-47">47</div>
-          <div class="card" id="c-48">48</div>
-          <div class="card" id="c-49">49</div>
-          <div class="card" id="c-50">50</div>
-          <div class="card" id="c-51">51</div>
-          <div class="card" id="c-52">52</div>
-          <div class="card" id="c-53">53</div>
-          <div class="card" id="c-54">54</div>
-          <div class="card" id="c-55">55</div>
-          <div class="card" id="c-56">56</div>
-          <div class="card" id="c-57">57</div>
-          <div class="card" id="c-58">58</div>
-          <div class="card" id="c-59">59</div>
-          <div class="card" id="c-60">60</div>
-          <div class="card" id="c-61">61</div>
-          <div class="card" id="c-62">62</div>
-          <div class="card" id="c-63">63</div>
-          <div class="card" id="c-64">64</div>
-          <div class="card" id="c-65">65</div>
-          <div class="card" id="c-66">66</div>
-          <div class="card" id="c-67">67</div>
-          <div class="card" id="c-68">68</div>
-          <div class="card" id="c-69">69</div>
-          <div class="card" id="c-70">70</div>
-          <div class="card" id="c-71">71</div>
-          <div class="card" id="c-72">72</div>
-          <div class="card" id="c-73">73</div>
-          <div class="card" id="c-74">74</div>
-          <div class="card" id="c-75">75</div>
-          <div class="card" id="c-76">76</div>
-          <div class="card" id="c-77">77</div>
-          <div class="card" id="c-78">78</div>
-          <div class="card" id="c-79">79</div>
-          <div class="card" id="c-80">80</div>
-          <div class="card" id="c-81">81</div>
-          <div class="card" id="c-82">82</div>
-          <div class="card" id="c-83">83</div>
-          <div class="card" id="c-84">84</div>
-          <div class="card" id="c-85">85</div>
-          <div class="card" id="c-86">86</div>
-          <div class="card" id="c-87">87</div>
-          <div class="card" id="c-88">88</div>
-          <div class="card" id="c-89">89</div>
-          <div class="card" id="c-90">90</div>
-          <div class="card" id="c-91">91</div>
-          <div class="card" id="c-92">92</div>
-          <div class="card" id="c-93">93</div>
-          <div class="card" id="c-94">94</div>
-          <div class="card" id="c-95">95</div>
-          <div class="card" id="c-96">96</div>
-          <div class="card" id="c-97">97</div>
-          <div class="card" id="c-98">98</div>
-          <div class="card" id="c-99">99</div>
-          <div class="card" id="c-100">100</div>
+    <div class="col-d-12">
+      <main class="overflow">
+        <div class="col-d-6 relative">
+          <div id="barrier" class="displayNone"></div>
+          <div id="cardTable" class="box-1">
+            <div class="card" id="c-1">1</div>
+            <div class="card" id="c-2">2</div>
+            <div class="card" id="c-3">3</div>
+            <div class="card" id="c-4">4</div>
+            <div class="card" id="c-5">5</div>
+            <div class="card" id="c-6">6</div>
+            <div class="card" id="c-7">7</div>
+            <div class="card" id="c-8">8</div>
+            <div class="card" id="c-9">9</div>
+            <div class="card" id="c-10">10</div>
+            <div class="card" id="c-11">11</div>
+            <div class="card" id="c-12">12</div>
+            <div class="card" id="c-13">13</div>
+            <div class="card" id="c-14">14</div>
+            <div class="card" id="c-15">15</div>
+            <div class="card" id="c-16">16</div>
+            <div class="card" id="c-17">17</div>
+            <div class="card" id="c-18">18</div>
+            <div class="card" id="c-19">19</div>
+            <div class="card" id="c-20">20</div>
+            <div class="card" id="c-21">21</div>
+            <div class="card" id="c-22">22</div>
+            <div class="card" id="c-23">23</div>
+            <div class="card" id="c-24">24</div>
+            <div class="card" id="c-25">25</div>
+            <div class="card" id="c-26">26</div>
+            <div class="card" id="c-27">27</div>
+            <div class="card" id="c-28">28</div>
+            <div class="card" id="c-29">29</div>
+            <div class="card" id="c-30">30</div>
+            <div class="card" id="c-31">31</div>
+            <div class="card" id="c-32">32</div>
+            <div class="card" id="c-33">33</div>
+            <div class="card" id="c-34">34</div>
+            <div class="card" id="c-35">35</div>
+            <div class="card" id="c-36">36</div>
+            <div class="card" id="c-37">37</div>
+            <div class="card" id="c-38">38</div>
+            <div class="card" id="c-39">39</div>
+            <div class="card" id="c-40">40</div>
+            <div class="card" id="c-41">41</div>
+            <div class="card" id="c-42">42</div>
+            <div class="card" id="c-43">43</div>
+            <div class="card" id="c-44">44</div>
+            <div class="card" id="c-45">45</div>
+            <div class="card" id="c-46">46</div>
+            <div class="card" id="c-47">47</div>
+            <div class="card" id="c-48">48</div>
+            <div class="card" id="c-49">49</div>
+            <div class="card" id="c-50">50</div>
+            <div class="card" id="c-51">51</div>
+            <div class="card" id="c-52">52</div>
+            <div class="card" id="c-53">53</div>
+            <div class="card" id="c-54">54</div>
+            <div class="card" id="c-55">55</div>
+            <div class="card" id="c-56">56</div>
+            <div class="card" id="c-57">57</div>
+            <div class="card" id="c-58">58</div>
+            <div class="card" id="c-59">59</div>
+            <div class="card" id="c-60">60</div>
+            <div class="card" id="c-61">61</div>
+            <div class="card" id="c-62">62</div>
+            <div class="card" id="c-63">63</div>
+            <div class="card" id="c-64">64</div>
+            <div class="card" id="c-65">65</div>
+            <div class="card" id="c-66">66</div>
+            <div class="card" id="c-67">67</div>
+            <div class="card" id="c-68">68</div>
+            <div class="card" id="c-69">69</div>
+            <div class="card" id="c-70">70</div>
+            <div class="card" id="c-71">71</div>
+            <div class="card" id="c-72">72</div>
+            <div class="card" id="c-73">73</div>
+            <div class="card" id="c-74">74</div>
+            <div class="card" id="c-75">75</div>
+            <div class="card" id="c-76">76</div>
+            <div class="card" id="c-77">77</div>
+            <div class="card" id="c-78">78</div>
+            <div class="card" id="c-79">79</div>
+            <div class="card" id="c-80">80</div>
+            <div class="card" id="c-81">81</div>
+            <div class="card" id="c-82">82</div>
+            <div class="card" id="c-83">83</div>
+            <div class="card" id="c-84">84</div>
+            <div class="card" id="c-85">85</div>
+            <div class="card" id="c-86">86</div>
+            <div class="card" id="c-87">87</div>
+            <div class="card" id="c-88">88</div>
+            <div class="card" id="c-89">89</div>
+            <div class="card" id="c-90">90</div>
+            <div class="card" id="c-91">91</div>
+            <div class="card" id="c-92">92</div>
+            <div class="card" id="c-93">93</div>
+            <div class="card" id="c-94">94</div>
+            <div class="card" id="c-95">95</div>
+            <div class="card" id="c-96">96</div>
+            <div class="card" id="c-97">97</div>
+            <div class="card" id="c-98">98</div>
+            <div class="card" id="c-99">99</div>
+            <div class="card" id="c-100">100</div>
+          </div>
         </div>
-      </div>
 
-      <div id="instructionsTable">
-        <input type="button" value="aiHelp" id="aiHelp">
-        <table>
-          <tr>
-            <th>Current try</th>
-            <th>Instruction</th>
-            <th>Tries Remaining</th>
-          </tr>
-        </table>
-      </div>
-    </main>
+        <div class="col-d-6 p-1">
+          <input type="button" value="aiHelp" id="aiHelp">
 
-    <footer id="footer">
-      <p>Success percentage: <span id="jsSuccessPercentage"></span></p>
-      <p>Created by Nenad Pejić</p>
-    </footer>
+          <table id="instructionsTable">
+            <tr>
+              <th>Current try</th>
+              <th>Instruction</th>
+              <th>Tries Remaining</th>
+            </tr>
+          </table>
+        </div>
+      </main>
+    </div>
+
+    <div class="col-d-12">
+      <footer class="overflow">
+        <p>Success percentage: <span id="jsSuccessPercentage"></span></p>
+        <p id="copyright">&#169; Created by Nenad Pejić</p>
+      </footer>
+    </div>
 
     <script src="./script.js"></script>
     <script src="./ai.js"></script>

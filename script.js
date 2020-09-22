@@ -1,6 +1,6 @@
 // DOM
 let divCardTable = document.querySelector("#cardTable");
-let tableInstructionsTable = document.querySelector("table");
+let tableInstructionsTable = document.querySelector("#instructionsTable");
 let spanJsSuccessPercentage = document.querySelector("#jsSuccessPercentage");
 
 // Global variables

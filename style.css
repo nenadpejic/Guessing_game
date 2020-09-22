@@ -6,55 +6,50 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+
+  background-color: var(--color-main);
 }
 .overflow {
   overflow: hidden;
 }
+.relative {
+  position: relative;
+}
+.p-1 {
+  padding: 1rem;
+}
+.box-1 {
+  border-radius: 2rem;
+  background-color: var(--color-white);
+  padding: 0.75rem;
+  margin: 0.5rem;
+}
 
 /* variables */
 :root {
-  --color-main: rgb(31, 255, 180);
-  --color-dark: #777;
+  --color-main: #96b2dd;
+  --color-dark: #444;
   --color-light: #ddd;
   --color-white: #fff;
-  --gradient1: linear-gradient(#402372, #7357a3);
-  --gradient2: linear-gradient(#7357a3, #402372);
+  --color-good: lightgreen;
+  --color-bad: lightsalmon;
 }
-
-/* container */
-/* .container {
-  height: 100vh;
-} */
 
 /* header */
-#header {
-  float: left;
-  width: 100%;
-  /* background-color: var(--color-dark); */
-  background-image: var(--gradient1);
+header {
   color: var(--color-white);
+  padding: 0 1rem;
 }
-
-#header h1, #header p {
-  text-align: center;
+header h1 {
+  margin-bottom: 0;
 }
-
-.clearFloat {
-  overflow: hidden;
+header p {
+  margin-top: 0.5rem;
 }
 
 /* main */
-main {
-  float: left;
-  width: 100%;
-  padding: 1rem;
-}
-
-/* square */
-#square {
-  float: left;
-  position: relative;
-}
+/* main {
+} */
 
 /* barrier */
 #barrier {
@@ -71,62 +66,130 @@ main {
 #cardTable {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  gap: 0.2rem;
 }
 .card {
   text-align: center;
   padding: 0.4rem;
-  background-color: #ddd;
-  position: relative;
+  color: var(--color-dark);
+  border-radius: 1rem;
 }
 .card:hover {
   cursor: pointer;
 }
 .fliped {
-  background-color: lightsalmon;
+  background-color: var(--color-bad);
 }
 .found {
-  background-color: lightgreen;
-}
-
-/* instructionsTable */
-#instructionsTable {
-  float: right;
-  text-align: center;
-}
-#instructionsTable table tr td:nth-child(2) {
-  text-align: left;
+  background-color: var(--color-good);
 }
 
 /* btnAiHelp */
 #aiHelp {
-  background-color: #86df99;
+  background-color: #70da87;
   color: var(--color-white);
   border: none;
   padding: 0.5rem 2rem;
   border-radius: 0.5rem;
-  margin: 0.5rem 0;
+  display: block;
+  margin: 0 auto 1rem;
 }
 #aiHelp:focus {
   outline: none;
 }
 #aiHelp:hover {
-  background-color: #98e4a8;
+  background-color: #8be09d;
+  cursor: pointer;
 }
 #aiHelp:active {
-  background-color: #6fda86;
+  background-color: #56d371;
+}
+
+/* instructionsTable */
+#instructionsTable {
+  color: var(--color-dark);
+  margin: auto;
+  text-align: center;
+}
+#instructionsTable tr td:nth-child(2) {
+  text-align: left;
 }
 
 /* footer */
-#footer {
-  float: left;
-  width: 100%;
-  /* background-color: var(--color-dark); */
-  background-image: var(--gradient2);
+footer {
   color: var(--color-white);
   text-align: center;
+  padding: 0 1rem;
 }
 
 #jsSuccessPercentage {
-  color: var(--color-main);
+  color: var(--color-good);
+}
+
+#copyright {
+  font-size: 0.8rem;
+}
+
+
+/* Responsive design */
+/* Mobile */
+[class*="col-"] {
+  width: 100%;
+}
+
+/* Desktop */
+@media only screen and (min-width: 800px) {
+  .box-1 {
+    padding: 0.75rem;
+    margin: 1rem;
+  }
+  header {
+    text-align: center;
+  }
+  header p {
+    margin-top: 1rem;
+  }
+  #cardTable {
+    gap: 0.2rem;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+    
+  .col-d-1 {
+    width: 8.33%;
+  }
+  .col-d-2 {
+    width: 16.66%;
+  }
+  .col-d-3 {
+    width: 25%;
+  }
+  .col-d-4 {
+    width: 33.33%;
+  }
+  .col-d-5 {
+    width: 41.66%;
+  }
+  .col-d-6 {
+    width: 50%;
+  }
+  .col-d-7 {
+    width: 58.33%;
+  }
+  .col-d-8 {
+    width: 66.66%;
+  }
+  .col-d-9 {
+    width: 75%;
+  }
+  .col-d-10 {
+    width: 83.33%;
+  }
+  .col-d-11 {
+    width: 91.66%;
+  }
+  .col-d-12 {
+    width: 100%;
+  }
 }
