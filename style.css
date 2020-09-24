@@ -19,12 +19,10 @@ body {
   --color-main: #1a73e8;
   --color-good: lightgreen;
   --color-bad: lightsalmon;
+  --footer-height: 3rem;
 }
 
 /* global classes */
-.overflow {
-  overflow: hidden;
-}
 .relative {
   position: relative;
 }
@@ -37,6 +35,13 @@ body {
   border: 1px solid var(--color-border);
   padding: 0.75rem;
   margin: 0.5rem;
+}
+
+#page-container{
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: var(--footer-height);
 }
 
 /* header */
@@ -140,6 +145,9 @@ main {
 footer {
   text-align: center;
   padding: 0 1rem;
+  height: var(--footer-height);
+  position: absolute;
+  bottom: 0;
   color: var(--color-text-0);
   background-color: var(--color-hover);
   border-top: 1px solid var(--color-border);
