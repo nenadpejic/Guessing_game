@@ -1,4 +1,5 @@
 // DOM
+let spanJsYear = document.querySelector("#jsYear");
 let divCardTable = document.querySelector("#cardTable");
 let tableInstructionsTable = document.querySelector("#instructionsTable");
 let spanJsSuccessPercentage = document.querySelector("#jsSuccessPercentage");
@@ -9,6 +10,9 @@ let rndmNum = 0;
 let currentNum = 0;
 let numTries = 0;
 let instruction = "none";
+
+// printYear
+spanJsYear.textContent = new Date().getFullYear();
 
 // create a random number 1 - 100
 function getRandomNumber() {
