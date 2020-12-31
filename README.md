@@ -1,5 +1,7 @@
 # guessing-game
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/18ba5179-be88-49be-a54f-034d8613fdf3/deploy-status)](https://app.netlify.com/sites/nenadpejic-guessing-game/deploys)
+
 Guessing game is a game where you need to guess the predetermined random number chosen by the computer within 7 tries. After each try you will get instructions on if the predetermined number is lower or higher than the one you guessed. Upon completion the game will calculate the success percentage. You can also ask the AI for Help.
 
 Live version is [here](https://nenadpejic-guessing-game.netlify.app/)
