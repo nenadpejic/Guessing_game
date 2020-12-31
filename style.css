@@ -6,7 +6,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--color-bg);
+  min-height: 100vh;
+  padding-bottom: var(--footer-height);
+  position: relative;
 }
 
 /* variables */
@@ -17,6 +19,7 @@ body {
   --color-hover: #eee;
   --color-bg: #fff;
   --color-main: #1a73e8;
+  --color-main-darker: #0e69df;
   --color-good: lightgreen;
   --color-bad: lightsalmon;
   --footer-height: 3rem;
@@ -37,17 +40,11 @@ body {
   margin: 0.5rem;
 }
 
-#page-container{
-  min-height: 100vh;
-  position: relative;
-  overflow: hidden;
-  padding-bottom: var(--footer-height);
-}
-
 /* header */
 header {
   text-align: center;
   padding: 0 1rem;
+  overflow: hidden;
 }
 header h1 {
   margin-bottom: 0;
@@ -61,6 +58,7 @@ header p {
 /* main */
 main {
   text-align: center;
+  overflow: hidden;
 }
 
 /* barrier */
@@ -100,9 +98,9 @@ main {
 
 /* btnAiHelp */
 #aiHelp {
-  background-color: var(--color-bg);
-  color: var(--color-text-1);
-  border: 1px solid var(--color-border);
+  background-color: var(--color-main);
+  color: var(--color-bg);
+  border: none;
   padding: 0.5rem 2rem;
   border-radius: 0.5rem;
   display: block;
@@ -112,7 +110,8 @@ main {
   outline: none;
 }
 #aiHelp:hover {
-  background-color: var(--color-hover);
+  background-color: var(--color-main-darker);
+  /* background-color: var(--color-hover); */
   cursor: pointer;
 }
 #aiHelp:active {
@@ -136,6 +135,8 @@ main {
 /* successPercentage */
 #jsSuccessPercentage {
   padding: 0.5rem;
+  width: 3.7rem;
+  display: inline-block;
   color: var(--color-bg);
   border-radius: 1rem;
   background-color: var(--color-main);
@@ -143,20 +144,19 @@ main {
 
 /* footer */
 footer {
-  text-align: center;
-  padding: 0 1rem;
-  height: var(--footer-height);
   position: absolute;
   bottom: 0;
-  color: var(--color-text-0);
+  width: 100%;
+  text-align: center;
+  height: var(--footer-height);
   background-color: var(--color-hover);
   border-top: 1px solid var(--color-border);
-}
-#copyright {
   color: var(--color-text-1);
   font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 /* Responsive design */
 /* Mobile */
