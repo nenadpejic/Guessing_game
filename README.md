@@ -1,4 +1,4 @@
-# guessing-game
+# Guessing Game
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/18ba5179-be88-49be-a54f-034d8613fdf3/deploy-status)](https://app.netlify.com/sites/nenadpejic-guessing-game/deploys)
 
